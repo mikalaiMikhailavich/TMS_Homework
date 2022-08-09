@@ -1,0 +1,17 @@
+body {
+  margin: 100px auto;
+  max-width: 1000px;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  border: 5px solid blue;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.item {
+  border: 3px solid pink;
+  width: 130px;
+  height: 60px;
+  margin: 10px;
+}
