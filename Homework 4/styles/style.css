@@ -1,0 +1,64 @@
+@font-face {
+  font-family: "Hind Siliguri";
+  src: url(../fonts/hind-siliguri-regular.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #e5e5e5;
+  text-transform: uppercase;
+  font-family: "Hind Siliguri";
+  color: #f4f9fc;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 100px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container__item {
+  padding: 75px 35px;
+  height: 296px;
+  width: 555px;
+}
+
+.drone {
+  background: url(../img/drone.png) no-repeat,
+    linear-gradient(to left, #008bf0, #d943c9);
+  background-position: right -10% top 100%;
+  /* background-attachment: local; */
+}
+
+.camera {
+  background: url(../img/camera.png) no-repeat,
+    linear-gradient(to left, #008bf0, #d943c9);
+  background-position: right 10% top 50%;
+  /* background-attachment: local; */
+}
+
+.drone__discount,
+.camera__discount {
+  font-size: 16px;
+  font-weight: 500;
+  opacity: 0.6;
+}
+.drone__title,
+.camera__title {
+  font-size: 31px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.drone__purchase,
+.camera__purchase {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  color: #f4f9fc;
+}
