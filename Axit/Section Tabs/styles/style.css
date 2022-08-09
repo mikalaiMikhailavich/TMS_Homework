@@ -1,0 +1,108 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(../fonts/open-sans.woff2);
+}
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway-v28-latin_cyrillic-regular.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+input {
+  display: none;
+}
+
+.tabs > label {
+  display: inline-block;
+  width: 184px;
+  padding: 8px 16px;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+}
+
+img {
+  float: left;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 100px auto 0 auto;
+  padding: 0 15px;
+}
+
+.tabs > div {
+  display: none;
+}
+
+.tabs__content {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #c6cbcd;
+}
+
+.tabs__info {
+  padding: 0 30px 54px 100px;
+}
+
+.tabs__title {
+  font-family: "Open Sans";
+  font-size: 30px;
+  font-weight: 700;
+  padding: 42px 0;
+}
+
+.tabs__text {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.tabs__button {
+  margin-top: 27px;
+  width: 270px;
+  font-family: "Open sans";
+  font-size: 18px;
+  font-weight: 600;
+  background-color: #ec7979;
+  color: white;
+  padding: 18px 95px;
+  border: none;
+  cursor: pointer;
+}
+
+.tabs__button:hover {
+  background-color: white;
+  border: 1px solid #ec7979;
+  color: #ec7979;
+}
+
+.tabs__button:active {
+  background-color: #ab4949;
+  border: 1px solid #ab4949;
+  color: white;
+}
+
+#tab-btn-1:checked ~ .tabs__checked1,
+#tab-btn-2:checked ~ .tabs__checked2,
+#tab-btn-3:checked ~ .tabs__checked3 {
+  display: block;
+}
+
+.tabs > input[type="radio"]:checked + label {
+  background-color: #fff;
+  border: 1px solid #c6cbcd;
+  border-bottom: 1px solid white;
+  border-radius: 10px 10px 0 0;
+}
+/* .tabs > label:not(:first-of-type) {
+  margin-left: -5px;
+} */
