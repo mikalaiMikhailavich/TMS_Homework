@@ -1,15 +1,16 @@
 body {
-  margin: 100px auto;
+  margin: 0;
   max-width: 1000px;
+  margin: 100px auto;
   box-sizing: border-box;
 }
-.container {
+.container__item {
   display: flex;
-  border: 5px solid blue;
   flex-wrap: wrap;
+  border: 5px solid blue;
   justify-content: space-between;
 }
-.item {
+.item__rectangle {
   border: 3px solid pink;
   width: 130px;
   height: 60px;
