@@ -1,0 +1,47 @@
+p::before {
+  content: "Начало: ";
+  color: red;
+}
+p::after {
+  content: ":конец! ";
+  color: green;
+}
+
+.list1 > li:first-child {
+  color: red;
+}
+
+.list2 > li:last-child {
+  color: green;
+}
+
+.list3 > li:nth-last-of-type(odd) {
+  color: red;
+}
+
+.list4 > li:nth-last-of-type(even) {
+  color: green;
+}
+
+.ex4 > p:not(.text) {
+  color: red;
+}
+.link {
+  font-size: 50px;
+}
+
+.ex6 > li {
+  list-style: none;
+  font-size: 50px;
+  padding: 0;
+  /* padding-left: 5px; */
+}
+.ex6 > li:before {
+  display: inline-block;
+  content: "  ";
+  width: 35px;
+  height: 35px;
+  background: red;
+  /* border: 10px solid red; */
+  margin-right: 30px;
+}
