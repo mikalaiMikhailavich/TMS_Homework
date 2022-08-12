@@ -27,6 +27,7 @@
 }
 
 .price__title {
+  padding-top: 50px;
   font-family: "Raleway";
   color: #000000;
   text-transform: uppercase;
