@@ -14,12 +14,16 @@
   /* border: 1px solid green; */
 }
 
+.wrapper {
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
   text-align: center;
-  background-color: #f5f5f5;
 }
 
 .price__title {
@@ -56,39 +60,64 @@
 .options {
   display: flex;
   justify-content: space-between;
-  position: relative;
 }
 
 .options__card {
-  width: 370px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-basis: 370px;
+  position: relative;
 }
 
-.options__card > div {
-  margin: 1px 0;
+.options__shadow {
+  box-shadow: 0 4px 4px 4px #b9b5b5;
+  bottom: 20px;
+}
+
+.options__item {
+  margin: 2px 0;
+  background-color: white;
   font-family: "Raleway";
   font-size: 18px;
-  font-weight: 400;
-  line-height: 48px;
+  font-weight: normal;
+  height: 50px;
+  line-height: 50px;
   color: #86878b;
-  /* background-color: #ffffff; */
-  height: 48px;
 }
 
-.xx {
-  position: relative;
-  bottom: 20px;
-  box-shadow: 0 2px 2px 2px #9e9fa34f;
+.options__item:first-child {
+  margin-top: 0;
+}
+.options__item:last-child {
+  margin-bottom: 0;
 }
 
 .options__type,
 .options__price,
-.option__duration {
-  background: #333333;
+.options__duration {
+  background-color: #333333;
+  font-family: "Open Sans";
 }
+
+.options__type {
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  font-weight: Bold;
+  color: white;
+}
+
 .options__price {
+  font-family: "Raleway";
   height: 100px;
   line-height: 100px;
+  font-size: 36px;
+  font-weight: Bold;
+  color: white;
+}
+
+.options__duration {
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #f5f5f5;
 }
