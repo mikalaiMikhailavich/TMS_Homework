@@ -29,11 +29,11 @@ input {
   top: 1px;
 }
 
-img {
+.tabs__image > img {
   float: left;
 }
 
-.container {
+.wrapper__container {
   max-width: 1200px;
   margin: 100px auto 0 auto;
   padding: 0 15px;

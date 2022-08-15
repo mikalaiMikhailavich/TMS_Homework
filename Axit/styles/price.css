@@ -1,28 +1,4 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/open-sans.woff2);
-}
-
-@font-face {
-  font-family: "Raleway";
-  src: url(../fonts/raleway-v28-latin_cyrillic-regular.ttf);
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-  /* border: 1px solid green; */
-}
-
-.wrapper {
-  width: 100%;
-  background-color: #f5f5f5;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+.price {
   text-align: center;
 }
 
@@ -64,6 +40,7 @@
   flex-wrap: wrap;
   column-gap: 30px;
   row-gap: 25px;
+  text-align: center;
 }
 
 .options__card {
