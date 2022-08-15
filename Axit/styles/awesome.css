@@ -1,3 +1,9 @@
+.awesome {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 15px 58px 15px;
+}
+
 .section-header {
   text-align: center;
 }

@@ -1,19 +1,11 @@
-@font-face {
-  font-family: "Open Sans";
-  src: url(../fonts/open-sans.woff2);
-}
-@font-face {
-  font-family: "Raleway";
-  src: url(../fonts/raleway-v28-latin_cyrillic-regular.ttf);
-}
-
-* {
-  margin: 0;
-  box-sizing: border-box;
-}
-
 input {
   display: none;
+}
+
+.tabs {
+  margin: 100px auto 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
 }
 
 .tabs > label {
@@ -31,12 +23,6 @@ input {
 
 .tabs__image > img {
   float: left;
-}
-
-.wrapper__container {
-  max-width: 1200px;
-  margin: 100px auto 0 auto;
-  padding: 0 15px;
 }
 
 .tabs > div {
