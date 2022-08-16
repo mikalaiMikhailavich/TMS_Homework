@@ -35,8 +35,7 @@
 .customers__cards {
   display: flex;
   justify-content: space-between;
-
-  /* column-gap: 30px; */
+  column-gap: 30px;
 }
 
 .customers__item {
