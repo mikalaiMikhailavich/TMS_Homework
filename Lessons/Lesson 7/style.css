@@ -1,0 +1,13 @@
+.discount {
+  display: inline-block;
+  border: 1px solid red;
+  transition: all 0.5s;
+  /* z-index: 0; */
+}
+.discount:not(.discount:first-child) {
+  margin-left: -2px;
+}
+.discount:hover {
+  transform: rotate(45deg);
+  /* z-index: 1; */
+}
