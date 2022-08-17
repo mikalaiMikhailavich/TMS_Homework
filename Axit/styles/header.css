@@ -1,0 +1,25 @@
+.header {
+  background-color: black;
+  color: white;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+}
+.header__logo {
+  position: relative;
+  right: 20px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.header__item {
+  padding: 10px;
+}

@@ -1,0 +1,6 @@
+.banner {
+  background: scroll url(../images/background-banner.png) no-repeat top center;
+  /* background-position: center; */
+  background-size: cover;
+  height: 950px;
+}
