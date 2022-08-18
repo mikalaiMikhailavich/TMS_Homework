@@ -20,16 +20,22 @@
   src: url(../fonts/raleway-v28-latin_cyrillic-regular.ttf);
 }
 
-* {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.wrapper {
+body {
   width: 100%;
   margin: 0 auto;
   background: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
