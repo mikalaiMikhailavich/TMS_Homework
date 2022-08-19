@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+  /* border: 1px solid pink; */
+  vertical-align: top;
+}
+.wrapper {
+  display: flex;
+  max-width: 900px;
+}
+label {
+  display: inline-block;
+  width: 100px;
+  text-align: end;
+}
+textarea {
+  width: 177px;
+}
