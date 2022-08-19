@@ -1,0 +1,10 @@
+.container {
+  background: url(./images/top.png) 0% -20% no-repeat,
+    url(./images/bottom.png) 100% 110% no-repeat,
+    linear-gradient(#fd749b, #281ac8) no-repeat fixed;
+
+  background-size: contain, contain, contain;
+  max-width: 1500px;
+  height: 100vh;
+  margin: 0 auto;
+}
