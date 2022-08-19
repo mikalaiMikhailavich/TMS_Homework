@@ -3,4 +3,32 @@
 }
 
 .socials__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials__info {
+  max-width: 470px;
+}
+
+.socials__title {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 60px;
+}
+
+.socials__text {
+  margin: 17px 0;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #86878b;
+}
+
+svg {
+  margin-left: 30px;
 }

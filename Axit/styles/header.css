@@ -22,9 +22,10 @@
 
 .header__item {
   font-family: "Open Sans";
-  width: 75px;
+  width: 114px;
   font-size: 14px;
   font-weight: 600;
+  text-align: center;
 }
 
 .header__item a {

@@ -4,10 +4,10 @@
   padding: 50px 15px 58px 15px;
 }
 
-.section-header {
+.awesome__header {
   text-align: center;
 }
-.section-title {
+.awesome__title {
   font-family: "Raleway";
   color: #000000;
   text-transform: uppercase;
@@ -15,14 +15,14 @@
   line-height: 150px;
   font-weight: 400;
 }
-.section-text {
+.awesome__text {
   font-family: "Raleway";
   color: #86878b;
   font-size: 18px;
   margin-top: 40px;
   font-weight: 400;
 }
-.section-title::after {
+.awesome__title::after {
   content: "";
   display: block;
   border-bottom: 1px solid #ec7979;
@@ -30,7 +30,7 @@
   margin: auto;
   margin-top: -1px;
 }
-.design {
+.awesome__design {
   margin-top: 71px;
   display: flex;
   /* flex: 1 1 auto; */
@@ -38,18 +38,18 @@
   text-align: center;
   justify-content: space-between;
 }
-.bulb {
+.awesome__bulb {
   max-width: 360px;
   margin: 0;
 }
 
-.design-title {
+.awesome__title {
   font-family: "Open Sans";
   font-size: 24px;
   line-height: 100px;
   font-weight: 700;
 }
-.design-text {
+.awesome__text {
   font-family: "Raleway";
   font-size: 18px;
   line-height: 21px;

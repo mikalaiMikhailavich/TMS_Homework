@@ -1,0 +1,19 @@
+.footer {
+  background: black;
+}
+
+.footer__content {
+  text-align: center;
+}
+
+.footer__icons {
+  padding: 35px 0 27px 0;
+}
+
+.footer__text {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  color: white;
+  padding-bottom: 27px;
+}

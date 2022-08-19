@@ -52,18 +52,39 @@
 }
 
 .banner__button {
+  margin-top: 42px;
+  width: 270px;
+  height: 60px;
+  font-family: "Open sans";
+  font-size: 18px;
+  font-weight: 600;
+  background-color: transparent;
+  color: white;
+  padding: 18px 95px;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
-.button {
+.banner__button:hover {
+  color: #ec7979;
+  border: 2px solid #ec7979;
 }
 
-.banner__form {
+.banner__button:active {
+  background-color: #ab4949;
+  color: white;
+  border: 2px solid #ab4949;
 }
 
 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
-  /* width: 470px; */
-  /* height: 450px; */
+  max-width: 470px;
+  height: 450px;
+  border-radius: 10px;
 }
 
 .form__container {
@@ -76,16 +97,34 @@
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 700;
-  line-height: 33px;
+  line-height: 90px;
+  color: #333333;
 }
 
 .form__title_colored {
+  color: #ec7979;
+}
+
+.form__container input {
+  margin-top: 34px;
+  width: 370px;
+  height: 38px;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 14px;
+  color: #bdbdbd;
+  border-bottom: 1px solid #bdbdbd;
 }
 
 .form__button {
+  /* align-self: flex-end; */
+  font-family: "Open sans";
+  font-size: 15px;
+  background-color: #ec7979;
+  color: white;
   width: 100%;
-}
-
-input {
-  max-width: 370px;
+  height: 60px;
+  border: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
