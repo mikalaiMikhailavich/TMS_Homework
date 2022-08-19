@@ -56,8 +56,8 @@
 .customers__comment::after {
   position: absolute;
   content: " ";
-  top: 181px;
-  left: 50px;
+  top: 100%;
+  left: 20%;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
   border-top: 20px solid #e2e2e2;
