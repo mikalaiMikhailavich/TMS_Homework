@@ -9,7 +9,7 @@
     <title>Axit</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="header">
       <div class="container">
         <div class="header__content">
           <div class="header__logo">
@@ -18,18 +18,18 @@
           </div>
           <nav class="footer__navigation">
             <ul class="header__menu">
-              <li class="header__item"><a href="Features">Features</a></li>
-              <li class="header__item"><a href="About">About</a></li>
-              <li class="header__item"><a href="Pricing">Pricing</a></li>
-              <li class="header__item"><a href="Reviews">Reviews</a></li>
-              <li class="header__item"><a href="Contact">Contact</a></li>
+              <li class="header__item"><a href="#banner">Features</a></li>
+              <li class="header__item"><a href="#awesome">About</a></li>
+              <li class="header__item"><a href="#price">Pricing</a></li>
+              <li class="header__item"><a href="#customers">Reviews</a></li>
+              <li class="header__item"><a href="#Contact">Contact</a></li>
             </ul>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="banner">
+      <section class="banner" id="banner">
         <div class="container">
           <div class="banner__content">
             <div class="banner__info">
@@ -69,7 +69,7 @@
           </div>
         </div>
       </section>
-      <section class="socials">
+      <section class="socials" id="socials">
         <div class="container">
           <div class="socials__content">
             <div class="socials__info">
@@ -171,7 +171,7 @@
           </div>
         </div>
       </section>
-      <section class="tabs">
+      <section class="tabs" id="tabs">
         <input type="radio" name="tab-btn" id="tab-btn-1" value="" checked />
         <label for="tab-btn-1">TAB 1</label>
         <input type="radio" name="tab-btn" id="tab-btn-2" value="" />
@@ -263,59 +263,56 @@
           </div>
         </div>
       </section>
-      <section class="awesome">
+      <section class="awesome" id="awesome">
         <div class="container">
-          <div class="awesome__header">
-            <h2 class="awesome__title">why this is awesome</h2>
-            <h5 class="awesome__text">
+          <div class="awesome__header section-title">
+            <h2 class="section-title__title">why this is awesome</h2>
+            <h5 class="section-title__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h5>
           </div>
-          <div class="awesome__design">
-            <div class="awesome__bulb">
+          <div class="awesome__design column">
+            <div class="column__card">
               <img src="./images/about_icon_1.png" />
               <h4 class="awesome__title">Thoughtful Design</h4>
               <h5 class="awesome__text">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing<br />
-                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
-                amet lacus accumsan et viverra.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
               </h5>
             </div>
-            <div class="awesome__bulb">
+            <div class="column__card">
               <img src="./images/about_icon_2.png" />
               <h4 class="awesome__title">Thoughtful Design</h4>
               <h5 class="awesome__text">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing<br />
-                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
-                amet lacus accumsan et viverra.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
               </h5>
             </div>
-            <div class="awesome__bulb">
+            <div class="column__card">
               <img src="./images/about_icon_3.png" />
               <h4 class="awesome__title">Thoughtful Design</h4>
               <h5 class="awesome__text">
-                Lorem ipsum dolor sit amet, consectetur <br />
-                adipiscing<br />
-                elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit
-                amet lacus accumsan et viverra.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+                euismod bibendum laoreet. Proin gravida dolor sit amet lacus
+                accumsan et viverra.
               </h5>
             </div>
           </div>
         </div>
       </section>
-      <section class="price">
-        <div class="price__container">
-          <div class="price__header">
-            <h2 class="price__title">pricing options</h2>
+      <section class="price" id="price">
+        <div class="container">
+          <div class="price__header section-title">
+            <h2 class="section-title__title">pricing options</h2>
 
-            <h5 class="price__text">
+            <h5 class="section-title__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h5>
           </div>
-          <div class="price__options options">
-            <div class="options__card">
+          <div class="price__options column">
+            <div class="column__card price__card">
               <div class="options__item options__type">Basic</div>
               <div class="options__item options__price">$10</div>
               <div class="options__item options__duration">Free for life</div>
@@ -326,7 +323,7 @@
               <div class="options__item">1 Gb Of Space</div>
               <div class="options__item">1 Gb Of Space</div>
             </div>
-            <div class="options__card options__shadow">
+            <div class="price__card column__card">
               <div class="options__item options__type">Optima</div>
               <div class="options__item options__price">$20</div>
               <div class="options__item options__duration">Free for life</div>
@@ -337,7 +334,7 @@
               <div class="options__item">1 Gb Of Space</div>
               <div class="options__item">1 Gb Of Space</div>
             </div>
-            <div class="options__card">
+            <div class="price__card column__card">
               <div class="options__item options__type">Pro</div>
               <div class="options__item options__price">$30</div>
               <div class="options__item options__duration">Free for life</div>
@@ -351,17 +348,17 @@
           </div>
         </div>
       </section>
-      <section class="customers">
-        <div class="customers__container">
-          <div class="customers__header">
-            <h2 class="customers__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
+      <section class="customers" id="customers">
+        <div class="container">
+          <div class="customers__header section-title">
+            <h2 class="section-title__title">WHAT OUR CUSTOMERS ARE SAYING</h2>
 
-            <h5 class="customers__text">
+            <h5 class="section-title__text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </h5>
           </div>
-          <div class="customers__cards">
-            <div class="customers__item">
+          <div class="customers__cards column">
+            <div class="customers__item column__card">
               <div class="customers__comment">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -379,7 +376,7 @@
                 </div>
               </div>
             </div>
-            <div class="customers__item">
+            <div class="customers__item column__card">
               <div class="customers__comment">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -397,7 +394,7 @@
                 </div>
               </div>
             </div>
-            <div class="customers__item">
+            <div class="customers__item column__card">
               <div class="customers__comment">
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -418,11 +415,13 @@
           </div>
         </div>
       </section>
-      <section class="design">
+      <section class="design" id="design">
         <div class="container">
-          <div class="design__header">
-            <h2 class="design__title">STYLISH AXURE DESIGN</h2>
-            <p class="design__text">
+          <div class="design__header section-title">
+            <h2 class="section-title__title section-title__title_white">
+              STYLISH AXURE DESIGN
+            </h2>
+            <p class="section-title__text section-title__text_white">
               Use the sections you need, remove the ones you don't. Create
               gorgeous prototypes faster than ever!
             </p>
@@ -431,7 +430,7 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="container">
         <div class="footer__content">
           <div class="footer__icons">

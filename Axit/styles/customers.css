@@ -1,45 +1,9 @@
-.customers__container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  text-align: center;
-}
-
-.customers__title {
-  padding-top: 50px;
-  font-family: "Raleway";
-  color: #000000;
-  text-transform: uppercase;
-  font-size: 36px;
-  line-height: 150px;
-  font-weight: 400;
-}
-
-.customers__title::after {
-  content: "";
-  display: block;
-  border-bottom: 1px solid #ec7979;
-  width: 170px;
-  margin: auto;
-  margin-top: -1px;
-}
-
-.customers__text {
-  font-family: "Raleway";
-  color: #86878b;
-  font-size: 18px;
-  margin-top: 40px;
-  font-weight: 400;
+.customers {
+  padding: 110px 0 64px 0;
 }
 
 .customers__cards {
-  display: flex;
-  justify-content: space-between;
-  column-gap: 30px;
-}
-
-.customers__item {
-  margin: 83px 0 64px 0;
+  margin-top: 83px;
 }
 
 .customers__comment {
@@ -86,4 +50,12 @@
   font-family: "Raleway";
   font-size: 18px;
   font-weight: normal;
+}
+
+.customers__logo {
+  align-self: center;
+}
+
+.customers__logo > img {
+  display: block;
 }
