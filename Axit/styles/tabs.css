@@ -54,27 +54,6 @@ input[type="radio"] {
 
 .tabs__button {
   margin-top: 27px;
-  width: 270px;
-  font-family: "Open sans";
-  font-size: 18px;
-  font-weight: 600;
-  background-color: #ec7979;
-  color: white;
-  padding: 18px 95px;
-  border: none;
-  cursor: pointer;
-}
-
-.tabs__button:hover {
-  background-color: white;
-  border: 1px solid #ec7979;
-  color: #ec7979;
-}
-
-.tabs__button:active {
-  background-color: #ab4949;
-  border: 1px solid #ab4949;
-  color: white;
 }
 
 #tab-btn-1:checked ~ .tabs__checked1,

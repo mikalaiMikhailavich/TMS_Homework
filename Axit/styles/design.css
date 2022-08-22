@@ -9,26 +9,4 @@
 
 .design__button {
   margin-top: 73px;
-  width: 370px;
-  height: 58px;
-  font-family: "Open sans";
-  font-size: 18px;
-  font-weight: 600;
-  background-color: transparent;
-  color: white;
-  padding: 18px 95px;
-  border: 2px solid white;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.design__button:hover {
-  color: #ec7979;
-  border: 2px solid #ec7979;
-}
-
-.design__button:active {
-  background-color: #ab4949;
-  color: white;
-  border: 2px solid #ab4949;
 }

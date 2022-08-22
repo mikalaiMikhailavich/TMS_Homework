@@ -22,7 +22,7 @@
               <li class="header__item"><a href="#awesome">About</a></li>
               <li class="header__item"><a href="#price">Pricing</a></li>
               <li class="header__item"><a href="#customers">Reviews</a></li>
-              <li class="header__item"><a href="#Contact">Contact</a></li>
+              <li class="header__item"><a href="#contact">Contact</a></li>
             </ul>
           </nav>
         </div>
@@ -45,7 +45,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit
               </p>
 
-              <button class="banner__button">Download</button>
+              <button class="banner__button button">Download</button>
             </div>
             <div class="banner__form form">
               <div class="form__container">
@@ -53,9 +53,14 @@
                   TRY YOUR <span class="form__title_colored">FREE</span> TRIAL
                   TODAY
                 </h3>
-                <form action="">
-                  <input type="text" name="name" id="name" value="Name" />
-                  <input type="email" name="email" id="email" value="Email" />
+                <form class="registration banner__registration" action="">
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="Email"
+                  />
                   <input
                     type="password"
                     name="password"
@@ -199,7 +204,9 @@
                 bibendum laoreet.
               </p>
 
-              <button class="tabs__button">Download</button>
+              <button class="tabs__button button button_colored">
+                Download
+              </button>
             </div>
             <div class="tabs__image">
               <img src="./images/The Statue of Liberty.jpg" alt="Liberty" />
@@ -227,7 +234,9 @@
                 bibendum laoreet.
               </p>
 
-              <button class="tabs__button">Download</button>
+              <button class="tabs__button button button_colored">
+                Download
+              </button>
             </div>
             <div class="tabs__image">
               <img src="./images/The Statue of Liberty.jpg" alt="Liberty" />
@@ -255,7 +264,9 @@
                 bibendum laoreet.
               </p>
 
-              <button class="tabs__button">Download</button>
+              <button class="tabs__button button button_colored">
+                Download
+              </button>
             </div>
             <div class="tabs__image">
               <img src="./images/The Statue of Liberty.jpg" alt="Liberty" />
@@ -426,7 +437,42 @@
               gorgeous prototypes faster than ever!
             </p>
           </div>
-          <button class="design__button">Download</button>
+          <button class="design__button button button_wide">Download</button>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <div class="container">
+          <div class="contact__header section-title">
+            <h2 class="section-title__title">Contact us</h2>
+            <p class="section-title__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+          </div>
+          <div class="contact__form">
+            <form class="contact__registration" action="">
+              <input type="text" name="name" id="name" placeholder="Name" />
+              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+            </form>
+
+            <textarea
+              class="contact__message"
+              name="textarea"
+              id=""
+              cols="30"
+              placeholder="Message"
+            ></textarea>
+          </div>
+          <div class="contact__button">
+            <button class="button button_colored button_wide">
+              Send Message
+            </button>
+          </div>
         </div>
       </section>
     </main>
