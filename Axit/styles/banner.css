@@ -63,12 +63,7 @@
   background-color: white;
   max-width: 470px;
   border-radius: 10px;
-}
-
-.form__container {
-  margin: 0 auto;
   text-align: center;
-  padding: 0 50px 40px 50px;
 }
 
 .form__title {
@@ -83,8 +78,10 @@
   color: #ec7979;
 }
 
-.form__container input {
+.banner__input {
   max-width: 100%;
+  margin-top: 35px;
+  padding-bottom: 17px;
   height: 38px;
   border: none;
   font-family: "Open Sans";
@@ -93,17 +90,35 @@
   border-bottom: 1px solid #bdbdbd;
 }
 
+.registration__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px;
+}
+
 .form__button {
   /* align-self: flex-end; */
   font-family: "Open sans";
   font-size: 15px;
   background-color: #ec7979;
   color: white;
-  width: 100%;
+  width: 470px;
   height: 60px;
   border: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.form__button:hover {
+  border: none;
+  background-color: #ab4949;
+  color: white;
+}
+
+.form__button:active {
+  border: none;
+  background-color: #ec7979;
+  box-shadow: inset 2px 2px 10px #ab4949;
 }
 
 @media all and (max-width: 1024px) {
@@ -111,6 +126,9 @@
     font-size: 36px;
   }
   .form {
+    max-width: 398px;
+  }
+  .form__button {
     max-width: 398px;
   }
 }

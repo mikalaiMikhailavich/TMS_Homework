@@ -48,29 +48,33 @@
               <button class="banner__button button">Download</button>
             </div>
             <div class="banner__form form">
-              <div class="form__container">
-                <h3 class="form__title">
-                  TRY YOUR <span class="form__title_colored">FREE</span> TRIAL
-                  TODAY
+
+              <form class="registration banner__registration" action="">
+                <div class="registration__container">
+                  <h3 class="form__title">
+                    TRY YOUR <span class="form__title_colored">FREE</span> TRIAL
+                    TODAY
                 </h3>
-                <form class="registration banner__registration" action="">
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input class="banner__input" type="text" name="name" id="name" placeholder="Name" />
                   <input
+                    class="banner__input"
                     type="email"
                     name="email"
                     id="email"
                     placeholder="Email"
                   />
                   <input
+                    class="banner__input"
                     type="password"
                     name="password"
                     id="password"
                     placeholder="Password"
                   />
-                </form>
-              </div>
-              <button class="form__button">Get started</button>
-            </div>
+                </div>
+
+                <input class="form__button" type="submit" value="Get Started" />
+              </form>
+
           </div>
         </div>
       </section>

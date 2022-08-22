@@ -52,6 +52,9 @@ img {
   /* width: 100%; */
   height: auto;
 }
+input {
+  border: none;
+}
 
 input:focus {
   outline: none;
