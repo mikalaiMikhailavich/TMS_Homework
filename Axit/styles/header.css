@@ -32,5 +32,23 @@
 }
 
 .header__item a {
+  position: absolute;
   color: white;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.header__item {
+  height: 75px;
+  align-self: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.header__item:hover {
+  background-color: #ec7979;
+}
+
+.header__item:active {
+  background-color: #ab4949;
 }
