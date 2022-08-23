@@ -47,33 +47,32 @@
 
               <button class="banner__button button">Download</button>
             </div>
-            <div class="banner__form form">
-
-              <form class="registration banner__registration" action="">
-                <div class="registration__container">
-                  <h3 class="form__title">
+            <form class="banner__form form" action="">
+              <div class="form__container">
+                <h4 class="form__title">
                     TRY YOUR <span class="form__title_colored">FREE</span> TRIAL
                     TODAY
-                </h3>
-                  <input class="banner__input" type="text" name="name" id="name" placeholder="Name" />
+                </h4>
+                <div class="form__registration">
+                  <input class="form__input" type="text" name="name" id="name" placeholder="Name" />
                   <input
-                    class="banner__input"
+                    class="form__input"
                     type="email"
                     name="email"
                     id="email"
                     placeholder="Email"
                   />
                   <input
-                    class="banner__input"
+                    class="form__input"
                     type="password"
                     name="password"
                     id="password"
                     placeholder="Password"
                   />
-                </div>
-
-                <input class="form__button" type="submit" value="Get Started" />
-              </form>
+                  </div>
+              </div>
+              <input class="form__button" type="submit" value="Get Started" />
+            </form>
 
           </div>
         </div>
@@ -452,31 +451,33 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
             </p>
           </div>
-          <div class="contact__form">
-            <form class="contact__registration" action="">
-              <input type="text" name="name" id="name" placeholder="Name" />
-              <input type="email" name="email" id="email" placeholder="Email" />
-              <input
+          <form class="contact__form" action="">
+            <div class="contact__review">
+              <div class="contact__registration">
+                <input class="contact__input" type="text" name="name" id="name" placeholder="Name" />
+                <input class="contact__input" type="email" name="email" id="email" placeholder="Email" />
+                <input
+                class="contact__input"
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Password"
-              />
-            </form>
-
-            <textarea
+                />
+              </div>
+              <textarea
               class="contact__message"
               name="textarea"
               id=""
               cols="30"
               placeholder="Message"
-            ></textarea>
+              ></textarea>
+            </div>
+            <div class="contact__button">
+              <input class="button button_colored button_wide" type="submit" value="Send Message">
+            </div>
+          </form>
           </div>
-          <div class="contact__button">
-            <button class="button button_colored button_wide">
-              Send Message
-            </button>
-          </div>
+
         </div>
       </section>
     </main>

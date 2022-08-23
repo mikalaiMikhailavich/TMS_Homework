@@ -3,7 +3,7 @@
     url(../images/background-banner.png) no-repeat center top;
   background-position: center;
   background-size: cover;
-  padding: 207px 0 185px 0;
+  padding: 281px 0 185px 0;
 }
 
 .banner__content {
@@ -54,16 +54,22 @@
 .banner__button {
   margin-top: 42px;
 }
-
-.banner__form {
+/* /////////////////////////////////////////////// */
+.form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-shrink: 0;
+  flex-shrink: 1;
   background-color: white;
   max-width: 470px;
   border-radius: 10px;
   text-align: center;
+}
+
+.form__container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 50px 75px 50px;
 }
 
 .form__title {
@@ -78,9 +84,14 @@
   color: #ec7979;
 }
 
-.banner__input {
+.form__registration {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+
+.form__input {
   max-width: 100%;
-  margin-top: 35px;
   padding-bottom: 17px;
   height: 38px;
   border: none;
@@ -88,12 +99,6 @@
   font-size: 14px;
   color: #bdbdbd;
   border-bottom: 1px solid #bdbdbd;
-}
-
-.registration__container {
-  display: flex;
-  flex-direction: column;
-  padding: 0 50px;
 }
 
 .form__button {
@@ -107,6 +112,7 @@
   border: none;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+  cursor: pointer;
 }
 
 .form__button:hover {

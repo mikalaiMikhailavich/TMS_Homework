@@ -70,13 +70,6 @@ input:focus {
   padding: 0 15px;
 }
 
-.registration {
-  display: flex;
-  flex-direction: column;
-  gap: 34px;
-  width: 100%;
-}
-
 .section-title {
   text-align: center;
 }
