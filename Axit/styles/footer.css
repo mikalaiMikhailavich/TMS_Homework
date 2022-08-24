@@ -23,6 +23,11 @@
   padding-bottom: 27px;
 }
 
+.svg {
+  /* width: 35px; */
+  margin: 0 10px;
+  min-width: 32px;
+
 @media screen and (max-width: 1024px) {
   .footer__socials {
     gap: 25px;

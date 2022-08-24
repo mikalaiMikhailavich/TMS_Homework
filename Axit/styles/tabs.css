@@ -49,14 +49,12 @@ input[type="radio"] {
 
 .tabs__title {
   font-family: "Open Sans";
-  font-size: 30px;
   font-weight: 700;
   padding: 42px 0;
 }
 
 .tabs__text {
   font-family: "Raleway";
-  font-size: 18px;
   font-weight: 400;
 }
 
@@ -82,10 +80,14 @@ input[type="radio"] {
 } */
 
 @media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 831px) {
   .tabs__title {
-    font-size: 24px;
+    padding: 20px 0;
   }
-  .tabs__text {
-    font-size: 14px;
+
+  .tabs__info {
+    padding: 0 10px 0 30px;
   }
 }

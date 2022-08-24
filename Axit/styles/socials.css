@@ -38,15 +38,11 @@
 }
 
 .social__icons svg {
-  width: calc(100% / 7);
+  /* width: calc(100% / 7); */
 }
 
 @media screen and (max-width: 1024px) {
   .socials__title {
-    font-size: 18px;
     line-height: 50px;
-  }
-  .socials__text {
-    font-size: 14px;
   }
 }
