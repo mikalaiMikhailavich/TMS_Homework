@@ -10,11 +10,30 @@
   font-family: "Open Sans";
   font-size: 24px;
   font-weight: 700;
-  padding-bottom: 50px;
+  padding-bottom: 45px;
 }
 .awesome__text {
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 400;
   padding: 0 18px;
+}
+
+.awesome__svg {
+}
+
+@media screen and (max-width: 1024px) {
+  .awesome__title {
+    font-size: 18px;
+    padding-bottom: 40px;
+  }
+
+  .awesome__text {
+    font-size: 14px;
+    padding: 0;
+  }
+
+  .awesome__design {
+    margin-top: 50px;
+  }
 }

@@ -25,10 +25,16 @@
 
 .header__item {
   font-family: "Open Sans";
-  width: 114px;
+  width: 10%;
+  max-width: 114px;
   font-size: 14px;
   font-weight: 600;
   text-align: center;
+  height: 75px;
+  align-self: center;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s;
 }
 
 .header__item a {
@@ -36,13 +42,6 @@
   color: white;
   top: 50%;
   transform: translate(-50%, -50%);
-}
-.header__item {
-  height: 75px;
-  align-self: center;
-  position: relative;
-  cursor: pointer;
-  transition: all 0.2s;
 }
 
 .header__item:hover {

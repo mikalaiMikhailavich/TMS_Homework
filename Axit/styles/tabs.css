@@ -10,7 +10,7 @@ input[type="radio"] {
 
 .tabs > label {
   display: inline-block;
-  width: 184px;
+  width: 15.7%;
   padding: 8px 16px;
   font-family: "Open Sans";
   font-size: 14px;
@@ -21,8 +21,14 @@ input[type="radio"] {
   top: 1px;
 }
 
+.tabs__image {
+  width: calc(100% / 12 * 5);
+}
+
 .tabs__image > img {
-  float: left;
+  display: block;
+  width: 100%;
+  /* object-fit: contain; */
 }
 
 .tabs > div {
@@ -33,10 +39,12 @@ input[type="radio"] {
   display: flex;
   justify-content: space-between;
   border: 1px solid #c6cbcd;
+  gap: 30px;
 }
 
 .tabs__info {
-  padding: 0 30px 54px 100px;
+  width: calc(100% / 12 * 7);
+  padding: 0 30px 0 100px;
 }
 
 .tabs__title {
@@ -63,6 +71,7 @@ input[type="radio"] {
 }
 
 .tabs > input[type="radio"]:checked + label {
+  width: 17.5%;
   background-color: #fff;
   border: 1px solid #c6cbcd;
   border-bottom: 1px solid white;
@@ -71,3 +80,12 @@ input[type="radio"] {
 /* .tabs > label:not(:first-of-type) {
   margin-left: -5px;
 } */
+
+@media screen and (max-width: 1024px) {
+  .tabs__title {
+    font-size: 24px;
+  }
+  .tabs__text {
+    font-size: 14px;
+  }
+}

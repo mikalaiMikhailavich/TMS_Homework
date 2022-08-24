@@ -17,6 +17,13 @@
   color: #86878b;
 }
 
+.customers__text {
+  font-family: "Raleway";
+  font-weight: 400;
+  font-size: 18px;
+  color: #86878b;
+}
+
 .customers__comment::after {
   position: absolute;
   content: " ";
@@ -30,10 +37,11 @@
 .customers__profile {
   display: flex;
   margin-top: 66px;
+  gap: 30px;
 }
 
 .customers__info {
-  margin-left: 30px;
+  width: 80%;
   text-align: left;
 }
 
@@ -53,9 +61,31 @@
 }
 
 .customers__logo {
+  width: 20%;
   align-self: center;
 }
 
 .customers__logo > img {
   display: block;
+}
+
+@media screen and (max-width: 1024px) {
+  .customers__text {
+    font-size: 14px;
+  }
+
+  .customers__name {
+    font-size: 18px;
+  }
+
+  .customers__job-title {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 795px) {
+  .customers__profile {
+    flex-direction: column;
+    gap: 0;
+  }
 }

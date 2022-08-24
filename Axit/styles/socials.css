@@ -4,12 +4,20 @@
 
 .socials__content {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  gap: 30px;
 }
 
 .socials__info {
-  max-width: 470px;
+  width: calc(100% / 12 * 5);
+}
+
+.socials__icons {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% / 12 * 7);
+  align-items: center;
+  gap: 30px;
 }
 
 .socials__title {
@@ -29,6 +37,16 @@
   color: #86878b;
 }
 
-svg {
-  margin-left: 30px;
+.social__icons svg {
+  width: calc(100% / 7);
+}
+
+@media screen and (max-width: 1024px) {
+  .socials__title {
+    font-size: 18px;
+    line-height: 50px;
+  }
+  .socials__text {
+    font-size: 14px;
+  }
 }
