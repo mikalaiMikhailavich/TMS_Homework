@@ -26,6 +26,7 @@ input[type="radio"] {
 }
 
 .tabs__image > img {
+  /* float: left; */
   display: block;
   width: 100%;
   /* object-fit: contain; */

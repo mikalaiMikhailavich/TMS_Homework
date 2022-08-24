@@ -17,37 +17,35 @@
   height: 31px;
 }
 
-.header__menu {
-  display: flex;
-  justify-content: space-around;
-  list-style: none;
-}
-
-.header__item {
+.header__link {
   font-family: "Open Sans";
-  width: 10%;
-  max-width: 114px;
-  font-size: 14px;
+  display: block;
   font-weight: 600;
-  text-align: center;
-  height: 75px;
-  align-self: center;
-  position: relative;
   cursor: pointer;
   transition: all 0.2s;
+  padding: 24px 18px;
+  height: fit-content;
 }
 
-.header__item a {
-  position: absolute;
+.header__link:visited {
   color: white;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
-.header__item:hover {
+.header__link:link {
+  color: white;
+}
+
+.header__item .header__link:hover {
   background-color: #ec7979;
 }
 
-.header__item:active {
+.header__link:active {
   background-color: #ab4949;
+}
+
+.header__navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
 }
