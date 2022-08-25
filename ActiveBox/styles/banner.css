@@ -1,0 +1,19 @@
+.banner {
+  background: linear-gradient(to left, #252b4938, #252b495b),
+    top/cover url(../images/banner-background.svg);
+  padding: 230px 0 120px 0;
+  /* height: 100vh; */
+  text-align: center;
+}
+
+.banner__title {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.banner__text {
+  color: white;
+  font-weight: 400;
+  margin-bottom: 80px;
+}
