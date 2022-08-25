@@ -209,7 +209,11 @@ input:focus {
   }
 
   .button {
-    max-width: 231px;
+    width: 231px;
+  }
+
+  .button_wide {
+    width: 318px;
   }
 
   .section-title__title::after {
