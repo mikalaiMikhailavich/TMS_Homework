@@ -24,11 +24,24 @@
 }
 
 .svg {
-  /* width: 35px; */
-  min-width: calc(100% / 8);
-  margin: 0 2px;
+  margin: 0 10px;
 }
 @media screen and (max-width: 1024px) {
   .footer__socials {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 688px) {
+  .footer__socials {
+    justify-content: space-around;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .footer__socials {
+    justify-content: space-around;
+    width: 100%;
   }
 }

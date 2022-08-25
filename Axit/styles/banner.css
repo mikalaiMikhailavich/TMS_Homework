@@ -22,7 +22,7 @@
   height: 100px;
 }
 
-.banner__logo img {
+.banner__image {
   padding-top: 10px;
   height: 55px;
 }
@@ -183,9 +183,6 @@
   }
   .banner__title {
     width: 100%;
-  }
-
-  .banner__title::after {
   }
 
   .form {

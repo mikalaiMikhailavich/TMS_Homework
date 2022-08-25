@@ -212,9 +212,6 @@ input:focus {
     max-width: 231px;
   }
 
-  .section-title__title {
-  }
-
   .section-title__title::after {
     padding-top: 50px;
   }
