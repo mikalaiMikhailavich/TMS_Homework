@@ -35,7 +35,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 body {
@@ -225,5 +225,26 @@ input:focus {
 
   .column {
     gap: 20px;
+  }
+}
+
+@media all and (max-width: 530px) {
+  .column {
+    flex-direction: column;
+    align-items: center;
+  }
+  .column__card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .button {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section-title__title::after {
+    width: 45%;
   }
 }

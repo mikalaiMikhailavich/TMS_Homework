@@ -92,3 +92,32 @@ input[type="radio"] {
     padding: 0 10px 0 30px;
   }
 }
+
+@media screen and (max-width: 560px) {
+  .tabs__info {
+    padding: 0 15px;
+    width: 100%;
+    text-align: center;
+  }
+  .tabs__image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 560px) {
+  .tabs > label {
+    width: 30%;
+  }
+  .tabs > input[type="radio"]:checked + label {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 413px) {
+  .tabs > label {
+    width: calc(100% / 3);
+  }
+  .tabs > input[type="radio"]:checked + label {
+    width: calc(100% / 3.27);
+  }
+}
