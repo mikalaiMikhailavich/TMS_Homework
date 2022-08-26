@@ -116,6 +116,7 @@ input[type="radio"] {
 @media screen and (max-width: 413px) {
   .tabs > label {
     width: calc(100% / 3);
+    top: 1.5px;
   }
   .tabs > input[type="radio"]:checked + label {
     width: calc(100% / 3.27);
