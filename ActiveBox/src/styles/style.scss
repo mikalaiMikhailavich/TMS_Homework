@@ -1,0 +1,92 @@
+@import url(./banner.scss);
+
+@import url(./features.scss);
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway-v28-latin_cyrillic-regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Raleway";
+  margin: 0;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 900;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+h4 {
+  font-size: 24px;
+  font-weight: 900;
+}
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+h5 {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  width: 31.6%;
+  height: 80px;
+  color: white;
+  background-color: #ff4343;
+  border: none;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #e71414;
+}
+
+.button:active {
+  background-color: #ff4343;
+  box-shadow: 4px 4px 30px #ff4343;
+}
+
+.column {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.column__card3 {
+  width: calc(100% / 3);
+}
+.column__card4 {
+  width: calc(100% / 4);
+}
