@@ -1,6 +1,6 @@
 .banner {
   text-align: center;
-  background: linear-gradient(to left, #252b4938, #252b495b), url("banner-background.84fd4294.svg") top / cover;
+  background: linear-gradient(to left, #252b49a9, #252b49ab), url("banner-background.84fd4294.svg") top / cover;
   padding: 230px 0 120px;
 }
 
@@ -18,6 +18,65 @@
 
 .features {
   text-align: center;
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+}
+
+.header__content {
+  height: 100px;
+  z-index: 1;
+  border-bottom: 1px solid #babbc5;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.header__navigation {
+  min-width: 58.3333%;
+  height: 100%;
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+}
+
+.header__item {
+  width: 20%;
+  text-align: center;
+  height: 100%;
+  transition: all .3s ease-in-out;
+}
+
+.header__item:hover {
+  border-bottom: 3px solid #babbc5;
+  position: relative;
+  top: 1px;
+}
+
+.header__item:active {
+  color: #e71414;
+  border-bottom: 3px solid #e71414;
+  position: relative;
+  top: 1px;
+}
+
+.header__item:active a {
+  color: #e71414;
+}
+
+.header__link {
+  color: #fff;
+  text-transform: uppercase;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  margin-top: 45px;
+  font-family: Raleway;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  display: block;
 }
 
 @font-face {
@@ -64,6 +123,7 @@ h5 {
 
 .container {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -73,6 +133,7 @@ h5 {
   height: 80px;
   color: #fff;
   text-transform: uppercase;
+  cursor: pointer;
   background-color: #ff4343;
   border: none;
   font-size: 24px;

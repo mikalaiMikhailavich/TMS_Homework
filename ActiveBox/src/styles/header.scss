@@ -1,0 +1,56 @@
+.header {
+  position: fixed;
+  width: 100%;
+
+  &__content {
+    display: flex;
+    border-bottom: 1px solid #babbc5;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    // gap: 30px;
+    z-index: 1;
+  }
+
+  &__navigation {
+    display: flex;
+    min-width: calc(100% / 12 * 7);
+    height: 100%;
+    align-items: center;
+    flex-shrink: 0;
+  }
+
+  &__item {
+    width: calc(100% / 5);
+    text-align: center;
+    height: 100%;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      border-bottom: 3px solid #babbc5;
+      position: relative;
+      top: 1px;
+    }
+    &:active {
+      border-bottom: 3px solid #e71414;
+      color: #e71414;
+      position: relative;
+      top: 1px;
+      a {
+        color: #e71414;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    margin-top: 45px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+    letter-spacing: 1px;
+    font-family: "Raleway";
+    font-size: 14px;
+    font-weight: 700;
+  }
+}
