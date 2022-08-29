@@ -2,10 +2,10 @@
   "name": "activebox",
   "version": "1.0.0",
   "description": "",
-  "source": "src/index.html",
+  "source": "./src/index.html",
   "scripts": {
     "start": "parcel serve --open",
-    "build": "parcel build"
+    "build": "parcel build --public-url ./"
   },
   "keywords": [],
   "author": "",
