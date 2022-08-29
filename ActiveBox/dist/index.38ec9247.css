@@ -1,25 +1,3 @@
-.banner {
-  text-align: center;
-  background: linear-gradient(to left, #252b49a9, #252b49ab), url("banner-background.84fd4294.svg") top / cover;
-  padding: 230px 0 120px;
-}
-
-.banner__title {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 30px;
-}
-
-.banner__text {
-  color: #fff;
-  margin-bottom: 80px;
-  font-weight: 400;
-}
-
-.features {
-  text-align: center;
-}
-
 .header {
   width: 100%;
   position: fixed;
@@ -31,6 +9,7 @@
   border-bottom: 1px solid #babbc5;
   justify-content: space-between;
   align-items: center;
+  gap: 30px;
   display: flex;
 }
 
@@ -46,7 +25,7 @@
   width: 20%;
   text-align: center;
   height: 100%;
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .header__item:hover {
@@ -69,7 +48,6 @@
 .header__link {
   color: #fff;
   text-transform: uppercase;
-  vertical-align: middle;
   letter-spacing: 1px;
   margin-top: 45px;
   font-family: Raleway;
@@ -79,19 +57,48 @@
   display: block;
 }
 
+.banner {
+  text-align: center;
+  background: linear-gradient(to left, #252b49a9, #252b49ab),
+    url("banner-background.84fd4294.svg") top / cover;
+  padding: 230px 0 120px;
+}
+
+.banner__title {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.banner__text {
+  color: #fff;
+  margin-bottom: 80px;
+  font-weight: 400;
+}
+
+.features {
+  text-align: center;
+}
+
 @font-face {
   font-family: Raleway;
   src: url("raleway-v28-latin_cyrillic-regular.71683c59.ttf");
 }
 
-*, :before, :after {
+*,
+:before,
+:after {
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0;
   font-family: Raleway;
 }
