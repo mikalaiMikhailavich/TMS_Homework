@@ -25,7 +25,7 @@
   width: 20%;
   text-align: center;
   height: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all .3s ease-in-out;
 }
 
 .header__item:hover {
@@ -59,8 +59,7 @@
 
 .banner {
   text-align: center;
-  background: linear-gradient(to left, #252b49a9, #252b49ab),
-    url("banner-background.84fd4294.svg") top / cover;
+  background: linear-gradient(to left, #252b49a9, #252b49ab), url("banner-background.84fd4294.svg") top / cover;
   padding: 230px 0 120px;
 }
 
@@ -85,20 +84,14 @@
   src: url("raleway-v28-latin_cyrillic-regular.71683c59.ttf");
 }
 
-*,
-:before,
-:after {
+*, :before, :after {
   box-sizing: border-box;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
   margin: 0;
   font-family: Raleway;
 }
@@ -168,6 +161,10 @@ h5 {
 
 .column__card4 {
   width: 25%;
+}
+
+.column__card5 {
+  width: 20%;
 }
 
 /*# sourceMappingURL=index.38ec9247.css.map */
