@@ -10,7 +10,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  /* height: 75px; */
 }
 
 .header__logo img {
@@ -50,6 +50,10 @@
   align-items: center;
 }
 
+.header input[type="checkbox"] {
+  display: none;
+}
+
 @media screen and (max-width: 587px) {
   .header__link {
     padding: 24px 5px;
@@ -59,5 +63,16 @@
 @media screen and (max-width: 440px) {
   .header__navigation {
     display: none;
+  }
+
+  .toggle-menu {
+    display: inline;
+  }
+
+  input[type="checkbox"]:checked ~ .header__navigation {
+    display: inline-block;
+  }
+  .header__content {
+    display: block;
   }
 }
