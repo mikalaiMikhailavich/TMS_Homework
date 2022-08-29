@@ -1,1 +1,0 @@
-{"mappings":"AAAA;;;;;;;AAMA","sources":["src/sass/style.scss"],"sourcesContent":["div {\r\n  width: 100px;\r\n  height: 200;\r\n  background: black;\r\n  margin: 100px;\r\n}\r\nbody {\r\n  display: flex;\r\n}\r\n"],"names":[],"version":3,"file":"index.75f14d4e.css.map","sourceRoot":"/__parcel_source_root/"}
