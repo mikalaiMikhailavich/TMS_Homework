@@ -1,12 +1,11 @@
 {
-  "name": "activebox",
+  "name": "test3",
   "version": "1.0.0",
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "clean": "rimraf dist",
     "start": "parcel serve --open",
-    "build": "npm run clean && parcel build --public-url ./ --no-source-maps"
+    "build": "parcel build"
   },
   "keywords": [],
   "author": "",
@@ -14,7 +13,6 @@
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
-    "rimraf": "^3.0.2",
     "sass": "^1.54.5"
   }
 }
