@@ -133,7 +133,7 @@
 
 .works {
   max-width: 1510px;
-  grid-template-rows: repeat(2, 339px);
+  grid-template-rows: repeat(2, 340px);
   grid-template-columns: repeat(4, 25%);
   margin: 0 auto;
   display: grid;
@@ -142,39 +142,36 @@
 .works__card {
   width: 100%;
   height: 100%;
-  background-size: contain;
+  object-fit: cover;
+  position: relative;
 }
 
-.works__card-1 {
-  background-image: url("work_1.35430b47.svg");
+.works__card:hover .works__content {
+  opacity: 1;
 }
 
-.works__card-2 {
-  background-image: url("work_2.10a096a5.svg");
+.works__content {
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  color: #000;
+  z-index: 100;
+  background-color: #ff4343c9;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in;
+  display: flex;
+  position: absolute;
+  top: 0;
 }
 
-.works__card-3 {
-  background-image: url("work_3.baba9101.svg");
-}
-
-.works__card-4 {
-  background-image: url("work_4.eb9ab15f.svg");
-}
-
-.works__card-5 {
-  background-image: url("work_5.4c028748.svg");
-}
-
-.works__card-6 {
-  background-image: url("work_6.a11d8756.svg");
-}
-
-.works__card-7 {
-  background-image: url("work_7.5f6f0d10.svg");
-}
-
-.works__card-8 {
-  background-image: url("work_8.c631f3a5.svg");
+.works img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  padding: 3px;
+  display: block;
 }
 
 @font-face {
