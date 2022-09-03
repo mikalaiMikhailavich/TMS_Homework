@@ -12,10 +12,6 @@
     position: relative;
   }
 
-  &__card:hover &__content {
-    opacity: 1;
-  }
-
   &__content {
     position: absolute;
     display: flex;
@@ -32,11 +28,13 @@
     transition: all 0.3s ease-in;
   }
 
+  &__card:hover &__content {
+    opacity: 1;
+  }
+
   img {
-    display: block;
-    height: 100%;
-    width: 100%;
     object-fit: cover;
     padding: 3px;
+    height: 100%;
   }
 }

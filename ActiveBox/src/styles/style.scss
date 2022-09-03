@@ -6,6 +6,10 @@
 
 @import url(./works.scss);
 
+@import url(./team.scss);
+
+@import url(./testimonials.scss);
+
 @font-face {
   font-family: "Raleway";
   src: url(../fonts/raleway-v28-latin_cyrillic-regular.ttf);
@@ -56,6 +60,11 @@ h5 {
   font-weight: 700;
 }
 
+img {
+  display: block;
+  width: 100%;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -86,9 +95,15 @@ h5 {
   display: flex;
   justify-content: space-between;
   gap: 30px;
+
+  &__card2 {
+    width: calc(100% / 2);
+  }
+
   &__card3 {
     width: calc(100% / 3);
   }
+
   &__card4 {
     width: calc(100% / 4);
   }
