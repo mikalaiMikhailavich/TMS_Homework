@@ -10,6 +10,10 @@
 
 @import url(./testimonials.scss);
 
+@import url(./download.scss);
+
+@import url(./footer.scss);
+
 @font-face {
   font-family: "Raleway";
   src: url(../fonts/raleway-v28-latin_cyrillic-regular.ttf);
@@ -62,7 +66,6 @@ h5 {
 
 img {
   display: block;
-  width: 100%;
 }
 
 .container {

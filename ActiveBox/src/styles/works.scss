@@ -3,7 +3,7 @@
   max-width: 1510px;
   display: grid;
   grid-template-columns: repeat(4, 25%);
-  grid-template-rows: repeat(2, 340px);
+  grid-template-rows: repeat(2, auto);
 
   &__card {
     width: 100%;
@@ -34,7 +34,7 @@
 
   img {
     object-fit: cover;
-    padding: 3px;
     height: 100%;
+    width: 100%;
   }
 }

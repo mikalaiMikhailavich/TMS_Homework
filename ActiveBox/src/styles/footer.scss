@@ -1,0 +1,9 @@
+.footer {
+  text-align: center;
+
+  &__socials {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+  }
+}

@@ -1,9 +1,17 @@
 .team {
+  padding-top: 116px;
+  img {
+    width: 100%;
+  }
+
   &__socials {
     display: flex;
+    justify-content: flex-start;
     height: 39px;
+    gap: 5px;
+
     img {
-      text-align: left;
+      width: auto;
     }
   }
 }
