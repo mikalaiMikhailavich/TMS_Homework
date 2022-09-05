@@ -131,17 +131,44 @@
   text-align: center;
 }
 
+.features__image {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.features__image img {
+  width: 100%;
+}
+
+.features__title {
+  text-transform: uppercase;
+  color: #2d3033;
+  margin-top: 55px;
+}
+
+.features__text {
+  color: #6c7279;
+  margin-top: 45px;
+}
+
+.features__column:nth-child(2) {
+  margin-top: 87px;
+}
+
 .works {
   max-width: 1510px;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: repeat(4, 25%);
   margin: 0 auto;
+  padding-top: 116px;
   display: grid;
 }
 
 .works__card {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   position: relative;
 }
@@ -152,6 +179,7 @@
   width: 100%;
   color: #000;
   z-index: 100;
+  cursor: pointer;
   background-color: #ff4343c9;
   flex-direction: column;
   justify-content: center;
@@ -166,9 +194,14 @@
   opacity: 1;
 }
 
+.works__card:hover .works__content:active {
+  opacity: 1;
+  background-color: #b90c0ccc;
+}
+
 .works img {
   object-fit: cover;
-  height: 100%;
+  height: auto;
   width: 100%;
 }
 
@@ -209,6 +242,14 @@
   width: 400%;
   transition: margin-left .8s ease-in-out;
   display: flex;
+}
+
+.testimonials__content img {
+  width: 100%;
+}
+
+.testimonials__story {
+  background-color: #5c3249;
 }
 
 .testimonials__dots {
@@ -263,7 +304,7 @@
 
 @font-face {
   font-family: Raleway;
-  src: url("raleway-v28-latin_cyrillic-regular.71683c59.ttf");
+  src: url("Raleway-VariableFont_wght.96b83478.ttf");
 }
 
 *, :before, :after {
@@ -299,6 +340,11 @@ h4 {
 }
 
 h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+h6 {
   font-size: 14px;
   font-weight: 700;
 }
