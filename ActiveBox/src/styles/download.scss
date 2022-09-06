@@ -1,3 +1,20 @@
 .download {
+  margin-top: 114px;
   text-align: center;
+
+  &__title {
+    // font-family: "Raleway Bold";
+    font-weight: 900;
+  }
+
+  &__text {
+    font-family: "Raleway Bold";
+    margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__button {
+    margin-top: 47px;
+  }
 }

@@ -1,4 +1,5 @@
 .features {
+  margin-top: 116px;
   text-align: center;
 
   &__image {
@@ -11,6 +12,7 @@
     }
   }
   &__title {
+    font-family: "Raleway Bold";
     margin-top: 55px;
     text-transform: uppercase;
     color: #2d3033;

@@ -130,6 +130,7 @@
 
 .features {
   text-align: center;
+  margin-top: 116px;
 }
 
 .features__image {
@@ -147,6 +148,7 @@
   text-transform: uppercase;
   color: #2d3033;
   margin-top: 55px;
+  font-family: Raleway Bold;
 }
 
 .features__text {
@@ -214,10 +216,29 @@
   width: 100%;
 }
 
+.team__name {
+  color: #2d3033;
+  margin-top: 30px;
+  font-family: Raleway Bold;
+  font-weight: 700;
+}
+
+.team__job-title {
+  color: #ff4343;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.team__text {
+  color: #6c7279;
+  margin-top: 20px;
+}
+
 .team__socials {
   height: 39px;
   justify-content: flex-start;
   gap: 5px;
+  margin-top: 35px;
   display: flex;
 }
 
@@ -227,7 +248,7 @@
 
 .testimonials {
   max-width: 1510px;
-  margin: 0 auto;
+  margin: 114px auto 0;
 }
 
 .testimonials input[type="radio"] {
@@ -245,23 +266,49 @@
   display: flex;
 }
 
+.testimonials__content {
+  justify-content: space-between;
+  display: flex;
+}
+
 .testimonials__content img {
   width: 100%;
 }
 
 .testimonials__story {
+  width: 50%;
   background-color: #5c3249;
+  flex-direction: column;
+  padding: 6% 3% 0% 5%;
+  display: flex;
+}
+
+.testimonials__text {
+  text-transform: capitalize;
+  color: #fff;
+  font-family: Cardo;
+  font-weight: 400;
+  line-height: 49px;
+}
+
+.testimonials__name {
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 10px;
+  font-weight: 400;
 }
 
 .testimonials__dots {
   justify-content: center;
   gap: 20px;
+  padding-top: 30px;
   display: flex;
 }
 
 .testimonials__dots label {
   width: 14px;
   height: 14px;
+  cursor: pointer;
   background-color: #0000;
   border: 1px solid #7e5d6f;
   border-radius: 100%;
@@ -291,6 +338,22 @@
 
 .download {
   text-align: center;
+  margin-top: 114px;
+}
+
+.download__title {
+  font-weight: 900;
+}
+
+.download__text {
+  text-transform: uppercase;
+  margin-top: 20px;
+  font-family: Raleway Bold;
+  font-weight: 700;
+}
+
+.download__button {
+  margin-top: 47px;
 }
 
 .footer {
@@ -311,6 +374,11 @@
 @font-face {
   font-family: Raleway Bold;
   src: url("Raleway-Black.9daa48c7.ttf");
+}
+
+@font-face {
+  font-family: Cardo;
+  src: url("Cardo-Italic.a7d77334.ttf");
 }
 
 *, :before, :after {

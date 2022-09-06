@@ -1,6 +1,6 @@
 .testimonials {
   max-width: 1510px;
-  margin: 0 auto;
+  margin: 114px auto 0 auto;
 
   input[type="radio"] {
     display: none;
@@ -18,16 +18,39 @@
   }
 
   &__content {
+    display: flex;
+    justify-content: space-between;
+
     img {
       width: 100%;
     }
   }
 
   &__story {
+    display: flex;
+    flex-direction: column;
+    padding: 6% 3% 0% 5%;
     background-color: #5c3249;
+    width: calc(100% / 2);
+  }
+
+  &__text {
+    font-family: "Cardo";
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 49px;
+    color: white;
+  }
+
+  &__name {
+    padding-top: 10px;
+    color: white;
+    font-weight: 400;
+    text-transform: uppercase;
   }
 
   &__dots {
+    padding-top: 30px;
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -40,6 +63,7 @@
       height: 14px;
       border-radius: 100%;
       border: 1px solid #7e5d6f;
+      cursor: pointer;
     }
   }
 }
