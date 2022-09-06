@@ -119,6 +119,7 @@
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 30px;
+  font-family: Raleway Bold;
 }
 
 .banner__text {
@@ -305,6 +306,11 @@
 @font-face {
   font-family: Raleway;
   src: url("Raleway-VariableFont_wght.96b83478.ttf");
+}
+
+@font-face {
+  font-family: Raleway Bold;
+  src: url("Raleway-Black.9daa48c7.ttf");
 }
 
 *, :before, :after {

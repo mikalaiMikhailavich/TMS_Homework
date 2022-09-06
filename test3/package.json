@@ -4,8 +4,8 @@
   "description": "",
   "source": "src/index.html",
   "scripts": {
-    "start": "parcel serve --open",
-    "build": "parcel build"
+    "start": "parcel serve --open --no-cache",
+    "build": "parcel build ./src/index.html --no-cache"
   },
   "keywords": [],
   "author": "",
