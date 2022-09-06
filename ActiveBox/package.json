@@ -5,8 +5,8 @@
   "source": "src/index.html",
   "scripts": {
     "clean": "rimraf dist",
-    "start": "parcel serve --open",
-    "build": "parcel build"
+    "start": "parcel serve --open --no-cache",
+    "build": "parcel build ./src/index.html --no-cache"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +15,6 @@
     "@parcel/transformer-sass": "^2.7.0",
     "parcel": "^2.7.0",
     "rimraf": "^3.0.2",
-    "sass": "^1.54.5"
+    "sass": "^1.54.8"
   }
 }
