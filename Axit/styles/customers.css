@@ -4,6 +4,16 @@
 
 .customers__cards {
   margin-top: 83px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.customers__inner {
+  margin-top: 83px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  text-align: center;
 }
 
 .customers__comment {
@@ -69,6 +79,19 @@
   display: block;
 }
 
+.customers__dots label {
+  display: none;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  border: 1px solid #86878b;
+}
+#customers1:checked ~ .customers__dots label:nth-child(1),
+#customers2:checked ~ .customers__dots label:nth-child(2),
+#customers3:checked ~ .customers__dots label:nth-child(3) {
+  background-color: #86878b;
+}
+
 @media screen and (max-width: 795px) {
   .customers__profile {
     flex-direction: column;
@@ -77,5 +100,37 @@
 
   .customers__logo {
     width: 80%;
+  }
+}
+
+@media all and (max-width: 530px) {
+  #customers1:checked ~ .customers__cards .customers__inner {
+    margin-left: 0%;
+  }
+  #customers2:checked ~ .customers__cards .customers__inner {
+    margin-left: -100%;
+  }
+  #customers3:checked ~ .customers__cards .customers__inner {
+    margin-left: -200%;
+  }
+
+  .customers__inner {
+    width: 300%;
+    gap: 0;
+    transition: margin-left 0.8s ease-in-out;
+  }
+
+  .customers__dots {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+  }
+
+  .customers__dots label {
+    display: block;
+  }
+  .customers__item {
+    padding: 1px;
   }
 }
