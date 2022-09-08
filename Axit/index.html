@@ -14,29 +14,21 @@
         <div class="header__content">
           <div class="header__logo">
             <img src="./icons/AXIT.svg" alt="AX" />
-            <img src="./icons/IT.svg" alt="AX" />
+            <img src="./icons/IT.svg" alt="IT" />
           </div>
-          <label for="toggle-1" class="toggle-menu"
-            ><i class="toggle-icon"
-              ><img src="./icons/burger.svg" alt="" srcset="" /></i
-          ></label>
-          <input type="checkbox" id="toggle-1" />
+
           <nav class="header__navigation">
-            <div class="header__item">
-              <a class="header__link" href="#banner">Features</a>
-            </div>
-            <div class="header__item">
-              <a class="header__link" href="#awesome">About</a>
-            </div>
-            <div class="header__item">
-              <a class="header__link" href="#price">Pricing</a>
-            </div>
-            <div class="header__item">
-              <a class="header__link" href="#customers">Reviews</a>
-            </div>
-            <div class="header__item">
-              <a class="header__link" href="#contact">Contact</a>
-            </div>
+            <input type="checkbox" name="burger" id="burger" />
+            <label for="burger" class="toggle-menu"
+              ><i class="toggle-icon"><img src="./icons/burger.svg" alt="" /></i
+            ></label>
+            <ul class="header__menu">
+              <li><a class="header__link" href="#banner">Features</a></li>
+              <li><a class="header__link" href="#awesome">About</a></li>
+              <li><a class="header__link" href="#price">Pricing</a></li>
+              <li><a class="header__link" href="#customers">Reviews</a></li>
+              <li><a class="header__link" href="#contact">Contact</a></li>
+            </ul>
           </nav>
         </div>
       </div>
