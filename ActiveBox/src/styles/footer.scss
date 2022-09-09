@@ -1,9 +1,42 @@
 .footer {
   text-align: center;
+  margin-top: 114px;
+
+  &__info {
+    padding: 72px 0;
+    &-background {
+      background-color: #353c65;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    color: white;
+    margin-bottom: 29px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: white;
+  }
 
   &__socials {
     display: flex;
     justify-content: center;
     gap: 27px;
+  }
+
+  &__copyright-background {
+    background-color: #2c3154;
+  }
+  &__copyright {
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+  &__rights {
+    color: 808080;
+    &_light {
+      color: white;
+    }
   }
 }
