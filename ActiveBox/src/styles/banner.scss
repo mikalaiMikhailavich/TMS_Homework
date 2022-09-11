@@ -17,3 +17,30 @@
     margin-bottom: 80px;
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .banner {
+    padding-top: 257px;
+    &__title {
+      font-size: 48px;
+      margin-bottom: 61px;
+    }
+    &__text {
+      margin-bottom: 90px;
+      padding: 0 110px;
+    }
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .banner {
+    padding-top: 106px;
+    &__title {
+      font-size: 36px;
+      padding: 0 3px;
+    }
+    &__text {
+      padding: 0;
+    }
+  }
+}

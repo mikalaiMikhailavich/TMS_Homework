@@ -36,6 +36,7 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  // border: 1px solid red;
 }
 
 h1,
@@ -109,15 +110,59 @@ img {
   justify-content: space-between;
   gap: 30px;
 
-  &__card2 {
-    width: calc(100% / 2);
-  }
-
   &__card3 {
     width: calc(100% / 3);
   }
 
   &__card4 {
     width: calc(100% / 4);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  h5 {
+    font-size: 14px;
+  }
+  .column {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .column {
+    flex-direction: column;
+    align-items: center;
+    &__card3 {
+      width: 75%;
+    }
+    &__card4 {
+      width: 75%;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .button {
+    width: 100%;
+  }
+  .column {
+    &__card3 {
+      width: 100%;
+    }
+    &__card4 {
+      width: 100%;
+    }
   }
 }

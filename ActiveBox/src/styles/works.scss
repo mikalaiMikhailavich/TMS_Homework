@@ -45,3 +45,10 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 630px) {
+  .works {
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+  }
+}

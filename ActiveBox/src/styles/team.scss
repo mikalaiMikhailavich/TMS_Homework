@@ -34,3 +34,11 @@
     }
   }
 }
+
+@media screen and (max-width: 1024px) {
+  .team {
+    &__socials {
+      height: 32px;
+    }
+  }
+}
