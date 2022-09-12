@@ -88,6 +88,7 @@ img {
 
 .button {
   width: 31.6%;
+  min-width: 250px;
   height: 80px;
   color: white;
   background-color: #ff4343;
@@ -154,6 +155,10 @@ img {
 }
 
 @media screen and (max-width: 460px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .button {
     width: 100%;
   }

@@ -34,13 +34,16 @@
 
 @media screen and (max-width: 630px) {
   .banner {
-    padding-top: 106px;
+    padding: 106px 0 52px 0;
+
     &__title {
       font-size: 36px;
       padding: 0 3px;
     }
     &__text {
       padding: 0;
+      text-align: center;
+      margin-bottom: 50px;
     }
   }
 }
