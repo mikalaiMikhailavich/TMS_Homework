@@ -10,3 +10,12 @@
 .design__button {
   margin-top: 73px;
 }
+
+@media screen and (max-width: 1024px) {
+  .awesome__icon {
+    max-height: 147px;
+  }
+  .awesome__icon object {
+    max-height: 147px;
+  }
+}

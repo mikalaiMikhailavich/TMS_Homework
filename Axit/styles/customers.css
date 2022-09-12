@@ -97,7 +97,9 @@
     flex-direction: column;
     gap: 0;
   }
-
+  .customers__name {
+    font-size: 18px;
+  }
   .customers__logo {
     width: 80%;
   }
@@ -127,6 +129,22 @@
     gap: 50px;
   }
 
+  .customers__profile {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  .customers__logo {
+    max-width: 60px;
+  }
+
+  .customers__logo img {
+    width: 100%;
+  }
+  .customers__name {
+    font-size: 14px;
+    font-weight: 900;
+  }
   .customers__dots label {
     display: block;
   }
