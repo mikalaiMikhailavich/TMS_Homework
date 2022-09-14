@@ -1,14 +1,16 @@
 .banner {
+  padding-top: 177px;
   background: linear-gradient((#f38381be), (#f4bf87)),
     url(../images/banner-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 100vh;
+  // height: 100vh;
   text-align: center;
 
   &__subtitle {
     font-size: 64px;
+    line-height: 92.86px;
     color: white;
     font-family: "Kaushan Script", cursive;
   }

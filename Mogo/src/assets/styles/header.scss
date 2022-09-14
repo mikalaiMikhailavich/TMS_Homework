@@ -1,18 +1,36 @@
+@use "./variables.scss" as c;
+
 .header {
   position: fixed;
   width: 100%;
   &__inner {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  &__logo {
+    width: 100%;
+  }
+
+  &__image {
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   &__navigation {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
   }
-}
 
-.basket:hover {
-  fill: red;
-  stroke: red;
+  svg path {
+    fill: white;
+  }
+  svg:hover path {
+    fill: c.$red;
+  }
 }
