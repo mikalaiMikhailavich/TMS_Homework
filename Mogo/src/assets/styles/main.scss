@@ -1,0 +1,31 @@
+@import "../fonts/fonts.scss";
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../styles/header.scss";
+
+@import "../styles/banner.scss";
+
+$red: #f38281;
+$yellow: #f9efcf;
+$orange: #f4bf87;
+$aqua: #95e1d3;
+$black: #2d3033;
+$gray: #c6cbcd;
+
+@mixin make-container($padding-x: $container-padding-x) {
+  width: 100%;
+  max-width: 1200px;
+  padding-right: $padding-x;
+  padding-left: $padding-x;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.container {
+  @include make-container(15px);
+}
+
+object {
+  stroke: #fff;
+}
