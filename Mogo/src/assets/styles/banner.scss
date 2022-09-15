@@ -1,10 +1,44 @@
 .banner {
   padding-top: 177px;
-  background: linear-gradient((#f38381be), (#f4bf87)),
-    url(../images/banner-image.png);
+  background: $background-color, url(../images/banner-image.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   // height: 100vh;
   text-align: center;
+
+  &__title {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+
+  &__button {
+    margin-top: 133px;
+  }
+
+  &__card {
+    margin-top: 116px;
+    height: 85px;
+    text-align: start;
+    line-height: 86px;
+    &::before {
+      display: block;
+      content: " ";
+      height: 4px;
+      width: 100%;
+      background: $white;
+    }
+  }
+  &__text {
+    padding-top: 10px;
+    @include font-setting($Raleway, 18px, 500, 21px);
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    @include font-setting($Raleway, 36px, 700, 42px);
+    color: $white;
+  }
 }
+// background: linear-gradient(to right, $red, $red 33%, $white 33%);

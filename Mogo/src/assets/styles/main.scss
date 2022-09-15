@@ -1,28 +1,35 @@
 @import "variables";
 
+@import "mixins";
+
 @import "../fonts/fonts.scss";
 
 @import "header";
 
 @import "banner";
 
+@import "about";
+
 *,
 *:before,
 *::after {
   margin: 0;
   padding: 0;
-  border: 1px solid red;
+  // border: 1px solid red;
   box-sizing: border-box;
 }
 
-// h1,
-// h2,
-// h3,
-// h4,
-// h5 {
-//   font-family: "Raleway";
-//   margin: 0;
-// }
+body {
+  color: $color-text;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
 
 // h1 {
 //   font-size: 144px;
@@ -64,40 +71,89 @@
 }
 
 .section-title {
-  font-size: 24px;
-  color: $black;
-  text-transform: uppercase;
-  line-height: 28px;
+  text-align: center;
+  &__title {
+    @include font-setting($Raleway, 36px, 900, 81px);
+    text-transform: uppercase;
 
-  &__subtitle {
-    font-size: 24px;
-    font-family: $Kaushan;
-    line-height: 35px;
-    color: $black;
-
-    &_large {
-      font-size: 48px;
-      line-height: 70px;
-    }
-  }
-
-  &_large {
-    font-size: 144px;
-    line-height: 117px;
-    padding: 33px auto;
     &:after {
-      margin-top: 29px;
+      position: relative;
+      top: 48px;
       content: " ";
       display: block;
-
-      border-bottom: 4px solid white;
+      border-bottom: 4px solid $red;
       width: 100%;
       max-width: 170px;
       background-color: $white;
-      margin: 29px auto 0 auto;
+      margin: 0 auto;
+    }
+
+    &_large {
+      @include font-setting($Montserrat, 144px, 700, 175px);
+      padding: 33px auto;
+      color: $white;
+
+      &:after {
+        position: relative;
+        top: 77px;
+        content: " ";
+        display: block;
+        border-bottom: 4px solid white;
+        width: 100%;
+        max-width: 170px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &__subtitle {
+    // padding: 32px 0;
+    @include font-setting($Kaushan, 24px, 400, 80px);
+
+    &_large {
+      padding: 0;
+      @include font-setting($Kaushan, 64px, 400, 70px);
+      color: $white;
     }
   }
 }
 
+.button {
+  @include font-setting($Raleway, 24px, 700, 28px);
+  color: $white;
+  max-width: 369px;
+  width: 100%;
+  height: 77px;
+  border: 4px solid $white;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+
+  &:hover {
+    color: $orange;
+    background-color: $white;
+  }
+
+  &:active {
+    border-color: $orange;
+  }
+}
+
 .column {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+  &__card2 {
+    width: 50%;
+  }
+
+  &__card3 {
+    width: calc(100% / 3);
+  }
+
+  &__card4 {
+    width: calc(100% / 4);
+  }
 }

@@ -22,13 +22,35 @@
   &__navigation {
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+    align-items: flex-start;
   }
 
-  svg path {
+  .icon path {
     fill: white;
+    transition: all 0.3s linear;
   }
-  svg:hover path {
+  .icon:hover path {
     fill: $red;
   }
+}
+
+.links {
+  @include font-setting($Raleway, 14px, 600, 16px);
+  padding-bottom: 5px;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 86px;
+  margin-left: 20px;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.links:hover {
+  color: $orange;
+  box-shadow: 0px 4px $orange;
+}
+
+.icon {
+  margin-left: 35px;
 }
