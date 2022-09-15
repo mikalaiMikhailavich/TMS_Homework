@@ -7,27 +7,4 @@
   background-size: cover;
   // height: 100vh;
   text-align: center;
-
-  &__subtitle {
-    font-size: 64px;
-    line-height: 92.86px;
-    color: white;
-    font-family: "Kaushan Script", cursive;
-  }
-
-  &__title {
-    font-size: 144px;
-    color: white;
-    text-transform: uppercase;
-  }
-
-  &__title:after {
-    content: " ";
-    display: block;
-    height: 4px;
-    width: 100%;
-    max-width: 170px;
-    background-color: white;
-    margin: 0 auto;
-  }
 }
