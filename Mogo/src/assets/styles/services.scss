@@ -1,0 +1,33 @@
+.services {
+  padding-top: 100px;
+  &__content {
+    margin-top: 130px;
+  }
+  &__block:last-child {
+    margin-top: 140px;
+  }
+  &__card {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__icon {
+    width: 20%;
+  }
+
+  &__description {
+    width: 75%;
+  }
+
+  &__title {
+    margin-top: 18px;
+    @include font-setting($Raleway, 24px, 700, 28px);
+    text-transform: uppercase;
+  }
+
+  &__text {
+    margin-top: 30px;
+
+    @include font-setting($Raleway, 18px, 400, 18px);
+  }
+}

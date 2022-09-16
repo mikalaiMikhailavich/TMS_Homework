@@ -4,3 +4,16 @@
   font-weight: $font-weight;
   line-height: $line-height;
 }
+
+// @include font-setting($font-family, $font-size, $font-weight, $line-height)
+
+@mixin position-title-underline($top, $color) {
+  position: relative;
+  top: $top;
+  content: " ";
+  display: block;
+  border-bottom: 4px solid $color;
+  width: 100%;
+  max-width: 170px;
+  margin: 0 auto;
+} ;

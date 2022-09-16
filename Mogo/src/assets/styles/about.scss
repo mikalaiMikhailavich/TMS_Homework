@@ -1,1 +1,30 @@
+.about {
+  padding-top: 100px;
 
+  &__card {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+    &:hover .about__content {
+      opacity: 1;
+      top: -16px;
+      left: -17px;
+    }
+  }
+  &__content {
+    transition: all 0.3s ease-in;
+    background: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+}

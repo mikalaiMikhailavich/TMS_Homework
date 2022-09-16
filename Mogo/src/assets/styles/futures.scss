@@ -1,0 +1,31 @@
+.futures {
+  background-color: $aqua;
+  margin-top: 106px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid $white;
+    &:last-child {
+      border-right: 1px solid $white;
+    }
+  }
+
+  &__number {
+    @include font-setting($Raleway, 64px, 500, 75px);
+    color: $white;
+  }
+
+  &__text {
+    @include font-setting($Raleway, 24px, 500, 28px);
+    color: $white;
+  }
+}

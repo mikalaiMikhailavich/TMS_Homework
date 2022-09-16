@@ -1,0 +1,22 @@
+.comment {
+  padding: 42px 0;
+  background: rgb($gray, 10%);
+
+  &__content {
+    display: flex;
+    gap: 30px;
+    margin: 0 auto;
+    max-width: 80%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__text {
+    @include font-setting($Raleway, 24px, 500, 28px);
+    font-style: italic;
+    color: $gray;
+  }
+}
