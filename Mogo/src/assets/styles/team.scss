@@ -1,0 +1,50 @@
+.team {
+  &__card {
+    position: relative;
+
+    &:hover .team__socials {
+      opacity: 1;
+    }
+  }
+
+  &__image {
+    position: relative;
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .team__socials:hover object {
+    background-color: green;
+    stroke: green;
+    fill: green;
+  }
+
+  &__socials {
+    transition: all 0.3s ease-in;
+    background: $background-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+
+  &__icon {
+    cursor: pointer;
+  }
+
+  &__name {
+    @include font-setting($Raleway, 24px, 700, 28px);
+  }
+
+  &__job-title {
+    @include font-setting($Raleway, 18px, 400, 18px);
+  }
+}

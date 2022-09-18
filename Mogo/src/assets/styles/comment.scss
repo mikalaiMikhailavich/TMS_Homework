@@ -1,4 +1,5 @@
 .comment {
+  margin-top: 100px;
   padding: 42px 0;
   background: rgb($gray, 10%);
 
@@ -8,8 +9,17 @@
     margin: 0 auto;
     max-width: 80%;
   }
+  &__image {
+    width: 12%;
+
+    img {
+      width: 100%;
+      min-width: 65px;
+    }
+  }
 
   &__info {
+    width: 88%;
     display: flex;
     flex-direction: column;
   }
@@ -18,5 +28,22 @@
     @include font-setting($Raleway, 24px, 500, 28px);
     font-style: italic;
     color: $gray;
+  }
+
+  &__author {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__line {
+    height: 4px;
+    width: 70px;
+    background-color: $red;
+  }
+
+  &__name {
+    @include font-setting($Kaushan, 24px, 400, 35px);
+    margin-left: 35px;
   }
 }
