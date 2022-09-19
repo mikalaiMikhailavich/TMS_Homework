@@ -1,0 +1,60 @@
+.reviews {
+  &__content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
+    row-gap: 40px;
+  }
+  &__card {
+    display: flex;
+    gap: 30px;
+    position: relative;
+  }
+
+  &__card:nth-child(even) {
+    margin-left: 15px;
+  }
+  &__card:nth-child(odd) {
+    margin-right: 15px;
+  }
+
+  &__logo {
+    width: calc(100% - 70%);
+    // padding: 0 20px 20px 20px;
+    img {
+      width: 100%;
+      padding: 15px;
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+  }
+  &__name {
+    @include font-setting($Raleway, 24px, 700, 28px);
+    text-transform: uppercase;
+  }
+  &__job-title {
+    padding-top: 10px;
+    text-transform: uppercase;
+    position: relative;
+    @include font-setting($Raleway, 18px, 400, 18px);
+
+    &::after {
+      display: block;
+      content: " ";
+      height: 4px;
+      top: 10px;
+      max-width: 18%;
+      background-color: $red;
+      position: relative;
+    }
+  }
+
+  &__text {
+    @include font-setting($Raleway, 18px, 400, 18px);
+    padding-top: 40px;
+  }
+}

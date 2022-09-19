@@ -1,8 +1,11 @@
 .team {
   &__card {
     position: relative;
+    text-align: center;
 
     &:hover .team__socials {
+      top: -15px;
+      left: -15px;
       opacity: 1;
     }
   }
@@ -14,12 +17,6 @@
       width: 100%;
       height: auto;
     }
-  }
-
-  .team__socials:hover object {
-    background-color: green;
-    stroke: green;
-    fill: green;
   }
 
   &__socials {
