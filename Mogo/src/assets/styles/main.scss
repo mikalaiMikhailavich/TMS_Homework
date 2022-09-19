@@ -26,6 +26,8 @@
 
 @import "blog";
 
+@import "footer";
+
 *,
 *:before,
 *::after {
@@ -106,6 +108,9 @@ p {
       &:after {
         @include position-title-underline(77px, $white);
       }
+    }
+    &_colored {
+      color: $red;
     }
   }
 

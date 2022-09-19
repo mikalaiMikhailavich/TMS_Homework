@@ -1,0 +1,114 @@
+.footer {
+  margin-top: 100px;
+
+  &__title {
+    padding-top: 30px;
+    width: 100%;
+    height: 231px;
+    background: rgba(255, 255, 255, 0.575),
+      url(../icons/footer-title__background.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  &__card1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    max-width: 140px;
+  }
+
+  &__content {
+    margin-top: 140px;
+  }
+
+  &__text {
+    padding-top: 35px;
+    @include font-setting($Raleway, 18px, 400, 21px);
+    color: $gray;
+  }
+
+  &__amount {
+    padding: 30px 0;
+    @include font-setting($Raleway, 18px, 500, 21px);
+    font-style: italic;
+    text-transform: uppercase;
+
+    span {
+      @include font-setting($Raleway, 36px, 700, 21px);
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 0;
+    border-top: 1px solid $gray;
+  }
+
+  &__follow {
+    @include font-setting($Raleway, 13px, 400, 15px);
+    font-style: italic;
+    color: $gray;
+  }
+
+  form {
+    margin-top: 30px;
+  }
+
+  fieldset {
+    width: 100%;
+    display: flex;
+    height: 55px;
+  }
+  input[type="email"] {
+    width: 70%;
+    border: 1px solid $gray;
+    border-right: none;
+    color: $gray;
+    text-align: center;
+    @include font-setting($Raleway, 18px, 400, 21px);
+  }
+
+  input[type="email"]:focus {
+    outline: none;
+  }
+
+  input[type="submit"] {
+    background-color: $aqua;
+    border: none;
+    width: 30%;
+    color: $white;
+    text-transform: uppercase;
+    @include font-setting($Raleway, 18px, 700, 21px);
+  }
+
+  &__blogs {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  &__blogs:last-child {
+    margin-bottom: 0;
+  }
+
+  &__card-title {
+    @include font-setting($Raleway, 24px, 700, 25px);
+    text-transform: uppercase;
+    padding-bottom: 35px;
+  }
+
+  &__blogs-title {
+    @include font-setting($Raleway, 18px, 700, 21px);
+    text-transform: uppercase;
+  }
+
+  &__blogs-date {
+    @include font-setting($Raleway, 13px, 400, 15px);
+  }
+}
