@@ -15,6 +15,15 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: calc(100% * 12 / 4);
+  }
+
+  &__card2 {
+    width: calc(100% * 12 / 3);
+  }
+
+  &__card3 {
+    width: calc(100% * 12 / 5);
   }
 
   &__logo {
@@ -23,6 +32,8 @@
 
   &__content {
     margin-top: 140px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid $gray;
   }
 
   &__text {
@@ -110,5 +121,36 @@
 
   &__blogs-date {
     @include font-setting($Raleway, 13px, 400, 15px);
+  }
+
+  &__instagram {
+    @include font-setting($Raleway, 24px, 700, 28px);
+    text-transform: uppercase;
+  }
+
+  &__photo {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, calc(100% / 3));
+    grid-template-rows: repeat(3, auto);
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__see-photos {
+    margin-top: 20px;
+    @include font-setting($Raleway, 13px, 400, 14px);
+    text-decoration: underline;
+    text-transform: uppercase;
+  }
+  &__copyright {
+    padding: 20px 0;
+    text-align: center;
+    &-text {
+      @include font-setting($Raleway, 13px, 700, 14px);
+      text-transform: uppercase;
+    }
   }
 }

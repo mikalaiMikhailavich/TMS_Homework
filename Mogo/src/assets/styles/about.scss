@@ -13,6 +13,7 @@
       left: -17px;
     }
   }
+
   &__content {
     transition: all 0.3s ease-in;
     background: $background-color;
@@ -27,4 +28,10 @@
     left: 0;
     opacity: 0;
   }
+
+  &__text {
+    @include font-setting($Raleway, 24px, 500, 28px);
+    color: $white;
+  }
+  text-transform: uppercase;
 }

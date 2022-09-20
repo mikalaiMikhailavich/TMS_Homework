@@ -1,4 +1,5 @@
 .team {
+  margin-top: 100px;
   &__card {
     position: relative;
     text-align: center;
@@ -38,10 +39,14 @@
   }
 
   &__name {
+    margin-top: 20px;
     @include font-setting($Raleway, 24px, 700, 28px);
+    text-transform: uppercase;
   }
 
   &__job-title {
+    margin-top: 40px;
     @include font-setting($Raleway, 18px, 400, 18px);
+    text-transform: uppercase;
   }
 }
