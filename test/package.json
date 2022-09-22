@@ -1,10 +1,14 @@
 {
   "name": "activebox",
   "version": "1.0.0",
+  "source": [
+    "src/pages/secondary.html",
+    "src/pages/ndex.html"
+  ],
   "scripts": {
     "clean": "rimraf dist",
-    "start": "parcel serve src/pages/*.html --open --no-cache",
-    "build": "parcel build src/pages/*.html --public-url ./ --no-cache"
+    "start": "parcel serve --open --no-cache",
+    "build": "parcel build --public-url ./ --no-cache"
   },
   "keywords": [],
   "author": "",
