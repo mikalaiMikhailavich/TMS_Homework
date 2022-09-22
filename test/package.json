@@ -1,0 +1,22 @@
+{
+  "name": "activebox",
+  "version": "1.0.0",
+  "source": [
+    "src/pages/index.html",
+    "src/pages/secondary.html"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "parcel serve --open --no-cache",
+    "build": "parcel build --public-url ./ --no-cache"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.54.9"
+  }
+}
