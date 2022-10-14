@@ -31,3 +31,43 @@ function getMaxSubSum(array) {
 }
 
 console.log(getMaxSubSum([1, 2, 3, -4, 5]));
+
+// 2
+
+let object1 = {
+  ключ1: 100,
+  ключ2: 100,
+  ключ4: 50,
+};
+
+let object2 = {
+  ключ2: 15,
+  ключ3: 10,
+};
+
+let object3 = {
+  ключ2: 10,
+  ключ3: 10,
+};
+function combine() {
+  var obj = {};
+
+  for (var i = 0; i < arguments.length; i++) {
+    for (var key in arguments[i]) {
+      obj[key] = obj[key] ? obj[key] + arguments[i][key] : arguments[i][key];
+    }
+  }
+  function sortObjectByKeys(o) {
+    return Object.keys(o).sort();
+    //   .reduce((r, k) => ((r[k] = o[k]), r), {});
+  }
+
+  var sorted = sortObjectByKeys(obj); //{a: "ant", b: "boy", c: "crane"}
+  //   let doublePrices = obj.fromEntries(
+  //     // преобразовать в массив, затем map, затем fromEntries обратно объект
+  //     Object.keys(obj).sort((a) => );
+  //   );
+  console.log(obj);
+  return sorted;
+}
+console.log(combine(object1, object2, object3));
